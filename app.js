@@ -1,11 +1,14 @@
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
+const express = require('express');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+const ENV      = require('./env');
+mongoose.connect(ENV.MONGODB_URI); 
 
-var users = require('./routes/users');
+const users = require('./routes/users');
 
-var app = express();
+const app = express();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));

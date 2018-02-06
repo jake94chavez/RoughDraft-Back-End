@@ -1,0 +1,1 @@
+module.exports.MONGODB_URI="mongodb://heroku_565cb765:r0iruk0gvljnu0n24rvjtfu76k@ds125578.mlab.com:25578/heroku_565cb765"
