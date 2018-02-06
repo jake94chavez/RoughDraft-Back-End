@@ -2,8 +2,8 @@ const express = require('express');
 const router = express.Router();
 const mongoose = require('mongoose');
 const Post = require('../models/post')
-var postsController = require('../controllers/posts');
-var commentsController = require('../controllers/comments');
+const postsController = require('../controllers/posts');
+const commentsController = require('../controllers/comments');
 
 //Post Routes
 router.get('/api/posts', postsController.index)
